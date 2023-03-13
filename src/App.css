@@ -1,38 +1,127 @@
-.App {
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+._header {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+._header-img {
+  width: 100%;
+  height: 800px;
+}
+.header_text {
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  text-transform: uppercase;
+  z-index: 1;
+  animation: showTop 1.3s;
+  font-weight: 900;
+  text-shadow: 0 8px 10px rgb(0 0 0 / 56%);
+  font-size: 62px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes showTop {
   from {
-    transform: rotate(0deg);
+    top: -100%;
   }
   to {
-    transform: rotate(360deg);
+    top: 154px;
   }
+}
+.overlay {
+  width: 100%;
+  height: 800px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.header__p {
+  position: absolute;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  bottom: 40%;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  width: 60%;
+  z-index: 2;
+  animation: showUp 1.4s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+@keyframes showUp {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 322px;
+  }
+}
+.square {
+  position: absolute;
+  left: 400px;
+  bottom: 230px;
+  color: white;
+  font-size: 30px;
+}
+.infoRegion {
+  left: 375px;
+  bottom: 200px;
+  color: white;
+  position: absolute;
+}
+.numberPeople {
+  position: absolute;
+  left: 680px;
+  bottom: 230px;
+  color: white;
+  font-size: 30px;
+}
+.numberPeople2023 {
+  left: 620px;
+  bottom: 205px;
+  color: white;
+  position: absolute;
+  font-size: 12px;
+}
+.styleLanguage {
+  position: absolute;
+  bottom: 185px;
+  color: aliceblue;
+  left: 1000px;
+  width: 200px;
+}
+.overlay2 {
+  position: absolute;
+  width: 100%;
+  animation: wakeUp 1.4s;
+}
+@keyframes wakeUp {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 804px;
+  }
+}
+.towerDescription {
+  max-width: 70%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 30px;
+  max-width: 70%;
 }

@@ -1,0 +1,51 @@
+.article__text {
+  color: black !important;
+  margin-left: 33%;
+  margin-top: 100px;
+  text-transform: uppercase;
+}
+.oskanov {
+  width: 300px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.oskanov:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-15px);
+}
+.malsagov {
+  width: 300px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.malsagov:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-15px);
+}
+.archakov {
+  width: 300px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.archakov:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-15px);
+}
+.ozdoev {
+  width: 300px;
+  height: 400px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ozdoev:hover {
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-15px);
+}
+.heroes__container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.heroes__container img {
+  border-radius: 20px;
+}
